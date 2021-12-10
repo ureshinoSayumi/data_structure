@@ -1,4 +1,5 @@
-// worst case O(n^2)
+// 氣泡排序
+// worst case O(n²)
 function bubbleSort(arr) {
   for (let i = 0; i <= arr.length-2; i++) {
     for (let j = arr.length-1; j >= i+1; j--) {
@@ -11,10 +12,9 @@ function bubbleSort(arr) {
   }
   console.log(arr)
 }
-bubbleSort([2,6,8,3,9,10,1])
+bubbleSort([7,2,6,8,3,9,10,1])
 
 // 優化 讓bast case 複雜度達到 O(n)
-
 function bubbleSort2(arr) {
   for (let i = 0; i <= arr.length-2; i++) {
     let swapping = false
